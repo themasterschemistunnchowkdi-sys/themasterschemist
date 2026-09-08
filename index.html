@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="THE MASTER'S CHEMIST — trusted medicines, healthcare essentials and pharmacy support.">
+  <title>THE MASTER'S CHEMIST | Your Trusted Pharmacy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <img src="logo.png" alt="THE MASTER'S CHEMIST logo">
+        <span>THE MASTER'S CHEMIST</span>
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#products">Healthcare</a>
+        <a href="#order">Order Medicines</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">YOUR TRUSTED PHARMACY</span>
+          <h1>Healthcare you can <span>trust.</span></h1>
+          <p>Your trusted 24/7 medical store, always open to serve you day and night. We provide a wide range of medicines, healthcare products, personal care essentials, and everyday medical needs with a focus on quality, convenience, and reliable service.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#order">Order Medicines</a>
+            <a class="btn secondary" href="#contact">Visit Our Store</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>✓</strong> Genuine medicines</div>
+            <div><strong>✓</strong> Friendly service</div>
+            <div><strong>✓</strong> Everyday healthcare</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="logo.png" alt="THE MASTER'S CHEMIST">
+          <div>
+            <b>THE MASTER'S CHEMIST</b>
+            <span>Your health. Our priority.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="availability">
+      <div class="container availability-inner">
+        <div class="pulse">24/7</div>
+        <div><b>Healthcare When You Need It</b><span>Open day and night, 24 hours a day · 7 days a week</span></div>
+        <a href="tel:+916351164012">Call +91 63511 64012</a>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">OUR SERVICES</span>
+          <h2>Everything you need, in one place.</h2>
+          <p>Simple, reliable pharmacy services designed around your everyday healthcare needs.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">💊</div><h3>Medicines</h3><p>Prescription and everyday medicines from trusted sources.</p></article>
+          <article class="card"><div class="icon">🩺</div><h3>Healthcare Essentials</h3><p>Personal care, wellness and essential healthcare products.</p></article>
+          <article class="card"><div class="icon">📋</div><h3>Prescription Support</h3><p>Share your prescription with our team for order assistance.</p></article>
+          <article class="card"><div class="icon">🌙</div><h3>24/7 Medical Store</h3><p>Healthcare when you need it — open 24 hours a day, 7 days a week.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">HEALTHCARE RANGE</span>
+          <h2>Shop by category.</h2>
+        </div>
+        <div class="category-grid">
+          <div>💊 <b>Medicines</b><small>Prescription & OTC</small></div>
+          <div>🧴 <b>Personal Care</b><small>Daily essentials</small></div>
+          <div>👶 <b>Baby Care</b><small>Mother & baby</small></div>
+          <div>🩹 <b>First Aid</b><small>Home health essentials</small></div>
+          <div>🩸 <b>Health Monitoring</b><small>Basic health devices</small></div>
+          <div>🌿 <b>Wellness</b><small>Everyday wellbeing</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section order">
+      <div class="container order-grid">
+        <div>
+          <span class="eyebrow">QUICK ORDER</span>
+          <h2>Need your medicines?</h2>
+          <p>Send us your medicine list or prescription and our team can confirm availability and guide you on the next step. Whether you need medicines during the day or late at night, we are here for you 24 hours a day, 7 days a week.</p>
+          <div class="notice">For prescription medicines, please provide a valid prescription as required by applicable law.</div>
+        </div>
+        <form class="order-form" onsubmit="submitOrder(event)">
+          <label>Name<input id="name" required placeholder="Your name"></label>
+          <label>Phone<input id="phone" required type="tel" placeholder="Your phone number"></label>
+          <label>Medicine / request<textarea id="request" required rows="4" placeholder="Type the medicines you need..."></textarea></label>
+          <button class="btn primary" type="submit">Send Order Request</button>
+          <small id="form-note">This demo opens WhatsApp using the number configured in script.js.</small>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h2>We’re here to help.</h2>
+          <p>Visit THE MASTER'S CHEMIST or contact us for medicine availability and pharmacy assistance.</p>
+        </div>
+        <div class="contact-box">
+          <div class="contact-actions">
+            <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Plot%20No.%203%2C%20Hamid%20Nagar%2C%20Unn%20Char%20Rasta%2C%20Un%2C%20Surat%2C%20Gujarat%20394210" target="_blank" rel="noopener">📍 Get Directions</a>
+            <a class="btn secondary" href="https://wa.me/916351164012" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          </div>
+          <div><span>📍</span><p><b>Store Address</b><br>Plot No. 3, Hamid Nagar, Unn Char Rasta, Un<br>Surat, Gujarat 394210</p></div>
+          <div><span>📞</span><p><b>Phone / WhatsApp</b><br><a id="phoneLink" href="tel:+916351164012">+91 63511 64012</a></p></div>
+          <div><span>🕒</span><p><b>Opening Hours</b><br>Open 24 hours · 7 days a week</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div><img src="logo.png" alt=""> <span>THE MASTER'S CHEMIST</span></div>
+      <p>© <span id="year"></span> THE MASTER'S CHEMIST. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
